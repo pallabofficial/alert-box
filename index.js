@@ -10,6 +10,6 @@ btn.addEventListener("click", (event)=>{
 
 
 closeAlertBtn.addEventListener("click",(event)=> {
-    alertBox.style.top="-100%";
-    alertOverlay.style.top = "-100%";
+    alertBox.style.top="-150vh";
+    alertOverlay.style.top = "-150vh";
 })
