@@ -3,74 +3,10 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
-   <title>Document</title>
+   <title>Alert Box</title>
 </head>
 <body>
-   <div id="main-body">
-      <button id="test">click me</button>
-      <p id="test-msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, excepturi dicta. Modi dignissimos magnam, necessitatibus sapiente, vel, eaque iste aspernatur est rerum consequatur impedit et unde eligendi nisi quas autem fugiat excepturi repellat exercitationem molestiae in. Officia facere quaerat id iste fugit maxime deleniti molestiae velit rerum. Dolore, odit laboriosam?</p>
-
-   </div>
-   
-
-<!-- --------------------------------------------------alert box--------------------------------------------- -->
-   <div id="alert-box">
-      <div id="alert-msg-div">
-         <p id="alert-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad hic numquam qui facere obcaecati.</p>
-      </div>
-      <div id="alert-btn-div">
-         <button id="remove-alert-btn">OK</button>
-      </div>
-      
-   </div>
-   <div id="overlay-alert-box"></div>
-
-
-
-
-<!-- --------------------------------------------------------------------------------------------------------------- -->
-   <script>
-      
-      
-        
-      var screen = window.innerWidth;
-      const mainBody = document.querySelector("body");
-      const alertBoxOverlay = document.querySelector("#overlay-alert-box");
-      const alertBox = document.querySelector("#alert-box");
-      const alertMsg = document.querySelector("#alert-msg");
-
-      document.querySelector("#test").addEventListener("click", (event) => { 
-      if(screen<=480){
-         alertBox.style.top = "50%";
-         alertBox.style.left = "5vw";
-         alertBox.style.opacity = 1; 
-         alertBox.style.transform = "translate(0, -50%)"; 
-
-      }
-      else{
-         alertBox.style.top = "2vh";
-         alertBox.style.opacity = 1; 
-      }     
-     
-      alertMsg.innerText = "click OK to exit. If it doesn't works, then it's probably due to your browser security. kindly exit manually.";
-      mainBody.style.overflow = "hidden";
-
-      });
-
-      document.querySelector("#alert-btn-div").addEventListener("click", (event) => {
-      
-      alertBox.style.top = "-100%";  
-      alertBox.style.opacity = 0;        
-      alertBoxOverlay.style.display = "none";
-      mainBody.style.overflow = "auto";
-      
-      });
-
-
-   </script>
+   <section id="alert-box"></section>
 </body>
 </html>
