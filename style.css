@@ -26,7 +26,7 @@ body{
   background-color: #FFFBFF;
   border-radius: 5vw;
   box-shadow: 1vw 1vw 2vw rgba(0,0,0, 0.5);
-  position:absolute;
+  position:fixed;
   top:-150vh;
   left:5vw;
   /* left:5vw; */
@@ -64,7 +64,7 @@ body{
 
 #alert-btn::after{
   content: '';
-  position: absolute;
+  position: fixed;
   top: -5px;
   left: -5px;
   width: calc(100% + 10px);
