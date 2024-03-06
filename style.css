@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+body{
+  position: relative;
+}
 #test{
   width:40%;
   height:20vh;
@@ -21,7 +24,7 @@
   box-shadow: 1vw 1vw 2vw rgba(0,0,0, 0.5);
 
   position:absolute;
-  top:-100%;
+  top:-150vh;
   left:5vw;
   /* left:5vw; */
   transform:translate(0,-50%);
@@ -49,6 +52,7 @@
   border:3px solid white;  
   position: relative;
   color:white;
+  font-size: 4vw;
   font-weight: 600;
 }
 #alert-btn::after{

@@ -4,7 +4,7 @@ const alertOverlay = document.querySelector("#alert-box-overlay");
 const closeAlertBtn = document.querySelector("#alert-btn");
 
 btn.addEventListener("click", (event)=>{
-    alertBox.style.top = "50%";
+    alertBox.style.top = "50vh";
     alertOverlay.style.top = 0;
 });
 
